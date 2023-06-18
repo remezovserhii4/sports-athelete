@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Prototyp Registration</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="includes/regisLogin.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Javascript -->
+		<script src="includes/js/jquery-3.2.1.min.js"></script>
+		<script src="includes/js/jquery-ui.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("mynavBar");
+            if (x.className === "navBar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navBar";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <!--#include file="includes/header.html" -->
+    </div>
+    
+
+<div id="loginContainer">
+    <div class="topHeader">Prototyp Registration</div>
+    
+    <div class="middleSection">
+        <form action="register.php" method="post" accept-charset="utf-8">
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name" required />
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required />
+            <input type="text" id="bdate" name="bdate" placeholder="Enter Birthdate (yyyy-mm-dd)" required />
+            <input type="text" id="username" name="username" placeholder="Enter Username" required />
+            <input type="password" id="password" name="password" placeholder="Enter Password" required/>
+            <input type="password" id="password2" name="password2" placeholder="Confirm Password" required />
+            <input type="email" id="email" name="email" placeholder="Enter Email Address" required />
+            
+            <div class="optionContainer">
+                <select id="level" name="level" required>
+                        <option value="" disabled selected hidden>Select Profile Type</option>
+                        <option value="Fan Profile">Fan Profile</option>
+                        <option value="Athlete Profile">Athlete Profile</option>
+                </select>
+                <div class="infoContainer"><img src="images/info-20.png" title="An 'Athlete Profile' allows the user to customize their profile based on their high school athletics career and upcoming college decisions.&#013;&#013;A 'Fan Profile' allows the user to target and track individual athletes from across the United States and Canada. Any updates the athlete makes will be seen by the fan." /></div>
+
+                <select id="parental" name="parental" required>
+                        <option value="" disabled selected hidden>Select Parental Permission</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                </select>
+                <div class="infoContainer"><img src="images/info-20.png" title="All individuals must be at least 13 years of age AND those under 18 years of age, must have parent/guardian permission to join The Prototyp. Some personal information is required in the creation of a profile."/></div>
+                </div>
+            <div class="required">* All fields required for registration</div>
+            
+        <div class="bottomSection">
+            <input type="submit" class="submit" value="Register" />
+        </div>
+        </form>
+    </div>
+    
+    <div class="footerSection">
+        <a href="login.php" class="log">Already a Member? Login Here</a>
+    </div>
+</div>
+
+</body>
+</html>

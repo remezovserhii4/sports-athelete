@@ -1,0 +1,61 @@
+<?php
+	$array_state = {0=>"Al", 1=>};
+
+?>                  
+                    
+                    
+                    
+                    
+                    
+                    <option value="">Choose State...</option>
+                    <option value="Alabama"  <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Alabama</option>
+                    <option value="Alaska" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Alaska</option>
+                    <option value="Arizona" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Arizona</option>
+                    <option value="Arkansas" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Arkansas</option>
+                    <option value="California" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>California</option>
+                    <option value="Colorado" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Colorado</option>
+                    <option value="Connecticut" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Connecticut</option>
+                    <option value="Delaware" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Delaware</option>
+                    <option value="Florida" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Florida</option>
+                    <option value="Georgia" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Georgia</option>
+                    <option value="Hawaii" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Hawaii</option>
+                    <option value="Idaho" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Idaho</option>
+                    <option value="Illinois" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Illinois</option>
+                    <option value="Indiana" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Indiana</option>
+                    <option value="Iowa" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Iowa</option>
+                    <option value="Kansas" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Kansas</option>
+                    <option value="Kentucky" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Kentucky</option>
+                    <option value="Louisiana" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Louisiana</option>
+                    <option value="Maine" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Maine</option>
+                    <option value="Maryland" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Maryland</option>
+                    <option value="Massachusetts" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Massachusetts</option>
+                    <option value="Michigan" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Michigan</option>
+                    <option value="Minnesota" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Minnesota</option>
+                    <option value="Mississippi" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Mississippi</option>
+                    <option value="Missouri" <?php if ($user_row['primarysport'] =='Alabama') echo "selected";?>>Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="New York">New York</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="North Dakota">North Dakota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Washington">Washington</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming">Wyoming</option>
+                    <option value="Canada">Canada</option>

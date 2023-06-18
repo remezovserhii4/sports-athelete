@@ -1,0 +1,566 @@
+
+	   html {
+            font-family: 'Muli', sans-serif;
+            background-color: white;
+        }
+        body {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            margin-top: 0;
+        }
+        #loginContainer {
+            display: block;
+            width: 320px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            background-color: white;
+        }
+            .topHeader {
+                display: block;
+                width: 320px;
+                height: 50px;
+                background-color: #006ad1;
+                color: white;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 50px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .middleSection {
+                display: block;
+                width: 320px;
+                height: auto;
+                overflow: auto;
+                background-color: white;
+            }
+                #fname {
+                    display: inline-block;
+                    float: left;
+                    width: 130px;
+                    height: 35px;
+                    margin-left: 15px;
+                    margin-top: 35px;
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #usernameLog {
+                    display: block;
+                    width: 280px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 35px;
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #usernameReset {
+                    display: block;
+                    width: 280px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 0px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #lname {
+                    display: inline-block;
+                    float: left;
+                    width: 129px;
+                    height: 35px;
+                    margin-left: 10px;
+                    margin-top: 35px;
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #passwordLog {
+                    display: block;
+                    width: 280px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #sendCode {
+                    display: block;
+                    width: 280px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 0px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #newpassword {
+                    display: block;
+                    width: 280px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 35px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #confirmpassword {
+                    display: block;
+                    width: 280px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 10px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #bdate {
+                    display: block;
+                    width: 280px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #email {
+                    display: block;
+                    width: 280px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #username {
+                    display: block;
+                    width: 280px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 10px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #password {
+                    display: inline-block;
+                    float: left;
+                    width: 130px;
+                    height: 35px;
+                    margin-left: 15px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                #password2 {
+                    display: inline-block;
+                    float: left;
+                    width: 129px;
+                    height: 35px;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    background-color: #f0f0f0;
+                    border: none;
+                    outline: none;
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                }
+                ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                    color: #9e9e9e;
+                }
+                ::-moz-placeholder { /* Firefox 19+ */
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                    color: #9e9e9e;
+                }
+                :-ms-input-placeholder { /* IE 10+ */
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                    color: #9e9e9e;
+                }
+                :-moz-placeholder { /* Firefox 18- */
+                    font-size: 10px;
+                    font-family: 'Muli', sans-serif;
+                    letter-spacing: 0.2px;
+                    color: #9e9e9e;
+                }
+                .optionContainer {
+                    display: block;
+                    width: 320px;
+                    height: auto;
+                    overflow: auto;
+                }
+                    #level, #parental {
+                        display: inline-block;
+                        float: left;
+                        width: 215px;
+                        height: 37px;
+                        margin-left: 15px;
+                        margin-top: 10px;
+                        padding-left: 10px;
+                        background-color: #f0f0f0;
+                        border: none;
+                        font-size: 10px;
+                        -webkit-appearance: none;
+                        -webkit-border-radius: 0px;
+                        outline: none;
+                        font-family: 'Muli', sans-serif;
+                    }
+                    #level:required:invalid {
+                        font-size: 10px;
+                        font-family: 'Muli', sans-serif;
+                        letter-spacing: 0.2px;
+                        color: #9e9e9e;
+                    }
+                    #parental:required:invalid {
+                        font-size: 10px;
+                        font-family: 'Muli', sans-serif;
+                        letter-spacing: 0.2px;
+                        color: #9e9e9e;
+                    }
+                    option {
+                        color: #3b3b3b;
+                    }
+                    .infoContainer {
+                        display: inline-block;
+                        float: left;
+                        width: 75px;
+                        height: 37px;
+                        margin-top: 10px;
+                    }
+                        .infoContainer img {
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding-top: 8px;
+                        }
+                    .required {
+                        display: block;
+                        width: 280px;
+                        height: 20px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 10px;
+                        background-color: white;
+                        color: #9e9e9e;
+                        font-size: 10px;
+                        line-height: 20px;
+                    }
+                    .requiredLog {
+                        display: block;
+                        width: 280px;
+                        height: 20px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 10px;
+                        background-color: white;
+                        color: #9e9e9e;
+                        font-size: 10px;
+                        line-height: 20px;
+                    }
+                    .requiredReset {
+                        display: block;
+                        width: 280px;
+                        height: 40px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 10px;
+                        background-color: white;
+                        color: #3b3b3b;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 40px;
+                        text-align: center;
+                    }
+                    .requiredChange {
+                        display: block;
+                        width: 280px;
+                        height: 40px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 10px;
+                        background-color: white;
+                        color: #3b3b3b;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                    .resetStep {
+                        display: block;
+                        width: 280px;
+                        height: 40px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 35px;
+                        background-color: white;
+                        color: #3b3b3b;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 40px;
+                    }
+            .bottomSection {
+                display: block;
+                width: 320px;
+                height: 60px;
+                overflow: auto;
+            }
+                .submit {
+                    display: block;
+                    width: 150px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 15px;
+                    background-color: #006ad1;
+                    color: white;
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
+                    line-height: 32px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .submit:hover {
+                    background-color: #0077ea;
+                }
+                .submit.active.focus,
+                .submit.active:focus,
+                .submit.focus,
+                .submit.focus:active,
+                .submit:active:focus,
+                .submit:focus {
+                    outline: 0;
+                    outline-offset: 0;
+                    background-image: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            .footerSection {
+                display: block;
+                width: 318px;
+                height: 50px;
+                background: transparent;
+                overflow: auto;
+            }
+                .footerSection .log {
+                    display: inline-block;
+                    float: left;
+                    width: 275px;
+                    height: 20px;
+                    margin-left: 23px;
+                    color: #006ad1;
+                    font-size: 11px;
+                    line-height: 20px;
+                    text-decoration: none;
+                    letter-spacing: 0.2px;
+                    text-align: center;
+                    cursor: pointer;
+                    font-family: 'Muli', sans-serif;
+                }
+                .footerSection .log:hover {
+                    color: #0077ea;
+                }
+            .errors {
+                    display: block;
+                    width: 290px;
+                    height: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    background-color: white;
+                    color: #3b3b3b;
+                    outline: none;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                .return {
+                    display: block;
+                    width: 150px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 35px;
+                    background-color: #006ad1;
+                    color: white;
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
+                    line-height: 35px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    text-align: center;
+                }
+                .return:hover {
+                    background-color: #1e90ff;
+                }
+                
+@media only screen and (max-width: 900px) {
+    #mainHeader {
+            display: block;
+            width: 320px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: none;
+        }
+            .leftLogo {
+                display: block;
+                float: none;
+                width: 140px;
+                height: 30px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        .navContainer {
+            display: block;
+            float: none;
+            width: 320px;
+            height: auto;
+        }
+            .navBar {
+                display: block;
+                width: 320px;
+                height: 35px;
+                margin-top: 30px;
+            }
+            .navBar a {
+                display: inline-block;
+                float: left;
+                width: 270px;
+                height: 35px;
+                background-color: #1e90ff;
+                color: white;
+                font-size: 12px;
+                line-height: 37px;
+                text-align: center;
+                font-family: Gotham Book, Verdana, Helvetica;
+            }
+            .navBar a:hover {
+                color: white;
+            }
+            .navBar a:not(:first-child) {
+                display: none;
+            }
+            .navBar a.icon {
+                display: inline-block;
+                float: left;
+                width: 50px;
+                text-align: center;
+            }
+            .navBar.responsive {
+                display: block;
+                width: 320px;
+                height: auto;
+                margin-top: 30px;
+                position: relative;
+            }
+            .navBar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navBar.responsive a {
+                float: none;
+                display: block;
+                width: 320px;
+                height: 35px;
+                border-bottom: 1px solid white;
+                text-align: center;
+                background-color: #1e90ff;
+                color: white;
+            }
+            .navBar.responsive a:hover {
+                background-color: #0077ea;
+            }
+
+}

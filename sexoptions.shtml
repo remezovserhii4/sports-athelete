@@ -1,0 +1,5 @@
+                    <option value="" style="color: #9e9e9e;">Choose Sex...</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Other">Other</option>
+                    <option value="Unknown">Unknown</option>

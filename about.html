@@ -1,0 +1,487 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Prototyp Features</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Javascript -->
+		<script src="includes/js/jquery-3.2.1.min.js"></script>
+		<script src="includes/js/jquery-ui.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <style>
+        html {
+            font-family: Gotham Book, Verdana, Helvetica;
+            background-color: white;
+        }
+        body {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            margin-top: 0;
+        }
+        #mainHeader {
+            display: block;
+            width: 100%;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+            .leftLogo {
+                display: inline-block;
+                float: left;
+                width: 140px;
+                height: 30px;
+                margin-top: 5px;
+                margin-left: 25px;
+            }
+                .leftLogo img {
+                    display: inline-block;
+                    float: left;
+                    width: 30px;
+                    height: 30px;
+                }
+                .headerName {
+                    display: inline-block;
+                    float: left;
+                    width: 100px;
+                    height: 30px;
+                    margin-left: 10px;
+                    color: #1e90ff;
+                    font-family: Gotham Book, Verdana, Helvetica;
+                    font-size: 20px;
+                    letter-spacing: 0.2px;
+                    line-height: 32px;
+                }
+            .navContainer {
+                display: inline-block;
+                float: right;
+                width: 500px;
+                height: 30px;
+                margin-top: 5px;
+                margin-right: 25px;
+            }
+                .navBar {
+                    display: inline-block;
+                    float: right;
+                    width: 500px;
+                    height: 30px;
+                    overflow: hidden;
+                }
+                .navBar a {
+                    display: inline-block;
+                    float: left;
+                    width: 100px;
+                    height: 30px;
+                    font-size: 11px;
+                    color: #1e90ff;
+                    font-family: Gotham Book, Verdana, Helvetica;
+                    line-height: 32px;
+                    text-decoration: none;
+                    text-align: center;
+                }
+                .navBar a:hover {
+                    color: #0077ea;
+                }
+                .navBar .icon {
+                    display: none;
+                }
+        #fullContainer {
+            display: block;
+            width: 675px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+        }
+        .loginContainer {
+            display: inline-block;
+            float: left;
+            width: 318px;
+            height: auto;
+            border: 1px solid #e0e0e0;
+            background-color: white;
+        }
+        .loginContainer2 {
+            display: inline-block;
+            float: left;
+            width: 318px;
+            height: auto;
+            margin-left: 35px;
+            border: 1px solid #e0e0e0;
+            background-color: white;
+        }
+        .loginContainer3 {
+            display: inline-block;
+            float: left;
+            width: 318px;
+            height: auto;
+            margin-top: 18px;
+            margin-left: 35px;
+            border: 1px solid #e0e0e0;
+            background-color: white;
+        }
+            .topSection {
+                display: block;
+                width: 318px;
+                height: 100px;
+                background-color: white;
+                overflow: auto;
+            }
+                .imageContainer {
+                    display: block;
+                    width: 265px;
+                    height: 60px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 20px;
+                    overflow: auto;
+                }
+                .imageContainer img {
+                    display: inline-block;
+                    float: left;
+                    width: 60px;
+                    height: 60px;
+                }
+                .topHeader {
+                    display: inline-block;
+                    float: left;
+                    width: 190px;
+                    height: 60px;
+                    padding-left: 15px;
+                    color: #1e90ff;
+                    font-family: Gotham Book, Verdana, Helvetica;
+                    font-size: 30px;
+                    letter-spacing: 0.3px;
+                    line-height: 60px;
+                }
+            .middleSection {
+                display: block;
+                width: 318px;
+                height: auto;
+                overflow: auto;
+            }
+                .middleText {
+                    display: block;
+                    width: 298px;
+                    height: auto;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color: black;
+                    font-family: Gotham Book, Verdana, Helvetica;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+                .middleHeader {
+                    display: block;
+                    width: 298px;
+                    height: 35px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: black;
+                    background-color: #e0e0e0;
+                    font-size: 12px;
+                    line-height: 36px;
+                    text-align: center;
+                }
+                .middleText2 {
+                    display: block;
+                    width: 258px;
+                    height: auto;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    color: black;
+                    font-family: Gotham Book, Verdana, Helvetica;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-align: left;
+                }
+            .bottomSection {
+                display: block;
+                width: 318px;
+                height: 60px;
+                overflow: auto;
+            }
+                
+@media only screen and (max-width: 900px) {
+    #mainHeader {
+            display: block;
+            width: 320px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: none;
+        }
+            .leftLogo {
+                display: block;
+                float: none;
+                width: 140px;
+                height: 30px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        .navContainer {
+            display: block;
+            float: none;
+            width: 320px;
+            height: auto;
+        }
+            .navBar {
+                display: block;
+                width: 320px;
+                height: 35px;
+                margin-top: 30px;
+            }
+            .navBar a {
+                display: inline-block;
+                float: left;
+                width: 270px;
+                height: 35px;
+                background-color: #1e90ff;
+                color: white;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                line-height: 37px;
+                text-align: center;
+                font-family: Gotham Book, Verdana, Helvetica;
+            }
+            .navBar a:hover {
+                color: white;
+            }
+            .navBar a:not(:first-child) {
+                display: none;
+            }
+            .navBar a.icon {
+                display: inline-block;
+                float: left;
+                width: 50px;
+                text-align: center;
+            }
+            .navBar.responsive {
+                display: block;
+                width: 320px;
+                height: auto;
+                margin-top: 30px;
+                position: relative;
+            }
+            .navBar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navBar.responsive a {
+                float: none;
+                display: block;
+                width: 320px;
+                height: 35px;
+                border-bottom: 1px solid white;
+                text-align: center;
+                background-color: #1e90ff;
+                color: white;
+            }
+            .navBar.responsive a:hover {
+                background-color: #0077ea;
+            }
+        #fullContainer {
+            width: 320px;
+        }
+        .loginContainer {
+            display: block;
+            float: none;
+            width: 318px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .loginContainer2 {
+            display: block;
+            float: none;
+            width: 318px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 35px;
+        }
+        .loginContainer3 {
+            display: block;
+            float: none;
+            width: 318px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 35px;
+        }
+            .topSection {
+                display: block;
+                width: 318px;
+                height: 100px;
+                background-color: white;
+                overflow: auto;
+            }
+                .imageContainer {
+                    display: block;
+                    width: 265px;
+                    height: 60px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 20px;
+                    overflow: auto;
+                }
+                .imageContainer img {
+                    display: inline-block;
+                    float: left;
+                    width: 60px;
+                    height: 60px;
+                }
+                .topHeader {
+                    display: inline-block;
+                    float: left;
+                    width: 190px;
+                    height: 40px;
+                    padding-left: 15px;
+                    color: #1e90ff;
+                    font-family: Gotham Book, Verdana, Helvetica;
+                    font-size: 30px;
+                    letter-spacing: 0.3px;
+                    line-height: 40px;
+                }
+                .topSubheader {
+                    display: inline-block;
+                    float: left;
+                    width: 190px;
+                    height: 20px;
+                    padding-left: 15px;
+                    color: #1e90ff;
+                    font-family: Gotham Book, Verdana, Helvetica;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            .middleSection {
+                display: block;
+                width: 318px;
+                height: auto;
+                overflow: auto;
+                background-color: white;
+            }
+        
+            .bottomSection {
+                display: block;
+                width: 318px;
+                height: 60px;
+                overflow: auto;
+            }
+            
+            .footerSection {
+                display: block;
+                width: 318px;
+                height: 50px;
+                background: transparent;
+                overflow: auto;
+            }
+
+}
+    </style>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("mynavBar");
+            if (x.className === "navBar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navBar";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="mainHeader">
+    <div class="leftLogo">
+        <img src="images/proto-logo-30.png" alt="The Prototyp Logo"/>
+        <span class="headerName">Prototyp</span>
+    </div>
+    <div class="navContainer">
+        <div class="navBar" id="mynavBar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Members</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+</div>
+
+<div id="fullContainer">
+<div class="loginContainer">
+    <div class="topSection">
+        <div class="imageContainer">
+            <img src="images/profile-60.png" />
+            <div class="topHeader">Profile</div>
+        </div>
+    </div>
+    
+    <div class="middleSection">
+        <div class="middleText">Choose between an Athlete and Fan Profile<br/><br/></div>
+            <div class="middleHeader">Athlete Profile</div>
+                <div class="middleText2"><br/>&#8226; For prep athletes in North America (United States, Canada)<br/><br/>
+                                    &#8226; Whether a highly-coveted recruit or someone destined for DIII, all athletes are welcome<br/><br/>
+                                    &#8226; Keep friends, family, and fans informed of your athletic aspirations and decisions<br/><br/>
+                                    &#8226; Allow fans inside access to your future decisions on a daily basis<br/><br/>
+                </div>
+            <div class="middleHeader">Fan Profile</div>
+                <div class="middleText2"><br/>&#8226; For fans of high school athletics and the college recruiting process<br/><br/>
+                                    &#8226; Follow athletes of your choice to gain instant access to their athletic profile<br/><br/>
+                                    &#8226; Hear from the athlete themselves before the major recruiting sites break the news<br/><br/>
+                                    &#8226; Choose to follow the nationally-known athlete or the neighbor down the street<br/><br/>
+                </div>
+    </div>
+</div>
+
+<div class="loginContainer2">
+    <div class="topSection">
+        <div class="imageContainer">
+            <img src="images/athletic-60.png" />
+            <div class="topHeader">Athletics</div>
+        </div>
+    </div>
+    
+    <div class="middleSection">
+        <div class="middleText">Select the Sports You Do Best<br/><br/></div>
+            <div class="middleHeader">Supported Sports</div>
+                <div class="middleText2"><br/>&#8226; For every athlete, both male and female<br/><br/>
+                                    &#8226; Prototyp supports football, basketball, baseball, softball, soccer and golf<br/><br/>
+                </div>
+    </div>
+</div>
+
+
+<div class="loginContainer3">
+    <div class="topSection">
+        <div class="imageContainer">
+            <img src="images/prowess-60.png" />
+            <div class="topHeader">Prowess</div>
+        </div>
+    </div>
+    
+    <div class="middleSection">
+        <div class="middleText">Don't Be Afraid to Brag!<br/><br/></div>
+            <div class="middleHeader">Profile Features</div>
+                <div class="middleText2"><br/>&#8226; Post results/stats from all of your competitions<br/><br/>
+                                    &#8226; Post important college decisions from scholarship offers to your top choices<br/><br/>
+                                    &#8226; Post your goals and accomplishments for the world to see<br/><br/>
+                                    &#8226; Fans of athletes will be updated to every change made in the athlete's mind<br/><br/>
+                </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
